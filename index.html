@@ -52,16 +52,16 @@
         </div>
         <div class="col s12 l6">
           <p id="energy-display"></p>
-        </div> 
+        </div>
         <div class="col s12 l6">
           <p id="energy-consummed"></p>
-        </div> 
+        </div>
         <div class="col s12 l6">
           <p id="chronometer-display"></p>
-        </div> 
+        </div>
         <div class="col s12 l6">
           <p id="power-display"></p>
-        </div> 
+        </div>
       </div>
     </div>
   </center>
@@ -93,9 +93,26 @@
     </div>
   </center>
 </div>
-
-
-  <p class="center-align">This code was initially developed by ChanRT from <a href="https://www.github.com/chanrt">GitHub</a></p>
+  <br>
+  <center>
+    <div class="container" style="width: 100%">
+      <div class="row">
+        <div class="col s12 l6">
+          <p id="heat-display"></p>
+          <input id="heat-input" type="range" min="1" max="500" step="10" oninput="updateParams('h')"
+            onchange="updateParams('h')">
+          <button class="btn purple darken-4" onclick="heatContainer()">Heat Container (Thousands of K)</button>
+        </div>
+        <div class="col s12 l6">
+          <br> <br>
+          <button id="ic-button" onclick="toggleIC()" class="btn purple darken-4">Turn on Intertial Confinement</button>
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
+<div>
+  <p class="center-align">Code Initially Developed by ChanRT from <a href="https://www.github.com/chanrt">GitHub</a></p>
 </div>
 
 </html>
